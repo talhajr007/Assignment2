@@ -37,7 +37,7 @@ body {
 
 /* nav bar */
 header {
-    height: 750px;
+    height: 720px;
     background: linear-gradient(to bottom, #232323 0%, #111 100%);
 }
 .ham-burger {
@@ -45,7 +45,7 @@ header {
 }
 
 .nav-container {
-    width: 55%;
+    width: 1060px;
     margin: 0 auto;
     padding-top: 55px;
     display: flex;
@@ -61,7 +61,7 @@ header {
 }
 
 .list-container {
-    width: 40%;
+    width: 465px;
     height: 100%;
     padding: 15px 0;
     padding-right: 25px;
@@ -96,8 +96,7 @@ header {
 }
 
 .text-container h1 span {
-    font-family: "Great Vibes", cursive;
-
+    font-family: 'Miama', cursive;
 }
 
 .text-container p {
@@ -121,7 +120,7 @@ header {
     font-size: 18px;
     font-weight: 600;
     text-align: center;
-    background: none;
+    background: transparent;
 }
 
 .image-container {  
@@ -205,6 +204,68 @@ header {
     text-align: left;
 }
 
+/* Change Your Habits */
+.section-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+}
+.change-your-habit {
+    margin-top: 100px;
+    text-align: center;
+    
+}
+.change-your-habit h2 {
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+}
+.change-your-habit p {
+    width: 90%;
+    margin-top: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.87rem;
+    font-weight: 400;
+    text-align: center;
+}
+.change-your-habit p br {
+    display: none;
+}
+.all-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin: 58px auto;
+}
+.image-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+.image-text-container h4 {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 20px;
+}
+.image-text-container p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.image-text-container img {
+    border-radius: 50%;
+}
 
 /* mobile responsive design */
 @media screen and (max-width: 576px) {
@@ -335,5 +396,28 @@ header {
     .card-2 p {
         font-size: 0.59rem;
     }
-
+    .section-2 {
+        margin-top: -10px;
+    }
+    .change-your-habit h2 {
+        font-size: 2rem;
+    }
+    .change-your-habit p {
+        font-size: 0.87rem;
+    }
+    .change-your-habit p br {
+    display: block;
+    }
+    .all-image-container {
+        flex-direction: column;
+    }
+    .image-text-container h4 {
+        color: rgb(255, 255, 255);
+        font-size: 1.12rem;
+        font-weight: 600;
+        text-align: center;
+    }
+    .image-text-container p {
+        font-size: 0.87rem;
+    }
 }
